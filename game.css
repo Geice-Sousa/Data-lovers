@@ -1,0 +1,125 @@
+body {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+main {
+  justify-content: center;
+  height: 100%;
+}
+
+.title {
+  color: #3adfad;
+  margin-top: 3rem;
+}
+
+img {
+  margin-bottom: -2.2rem;
+}
+
+.logo {
+  margin-top: 1rem;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: aliceblue;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.grid-game {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  width: 80%;
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+.mensage {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.button {
+  background-color: #3adfad;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  border: none;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+  aspect-ratio: 9/10;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;  
+  margin: .2rem auto; 
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #b3d929;
+  border-radius: 10px;
+  transition: all 700ms ease;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url("./images/rick\ e\ morty6.jpg");
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 920px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .time {
+    width: 8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  footer {
+    position: absolute;
+  }
+
+  .mensage {
+    font-size: 1.1rem;
+  }
+}

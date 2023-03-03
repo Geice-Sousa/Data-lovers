@@ -1,0 +1,69 @@
+/* body especifico para essa pág */
+body{
+	margin: 0px;
+}
+
+.logo{
+	margin-top: 1rem;
+  }
+
+.textApresentation{
+	color: rgb(0, 0, 0);
+	line-height: 30px;
+	vertical-align: baseline;
+	margin-top: 1rem;
+	padding: 30px;
+	text-align: justify;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.cards{
+	background-color: #3ADFAD;
+	opacity: 80%;
+	border-radius: 15px;
+}
+
+.mainSobre{
+	display: flex;
+	align-items:center;
+	margin: 3rem;
+	gap: 1rem;	
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+	.mainSobre{
+		display: block;
+		text-align: center;
+	}
+	.containerImagem{
+		width: 10%;
+	}
+	.imagemLateral{
+		width: 55%;
+		margin-top: -24%;
+	}
+
+	.cards{
+		width: 100% ;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width:480px){
+	.mainSobre{
+		display: block;
+		text-align: center;
+		margin: 2rem;
+		padding-right: 25px;
+	}
+
+	.imagemLateral{
+		width: 100%;
+		margin-top: -40%;
+	}
+
+	.cards{
+		width: 110% ;
+		margin: auto;
+	}
+}

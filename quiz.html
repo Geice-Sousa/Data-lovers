@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="backgroundFooterNav.css">
+  <link rel="stylesheet" href="quiz.css">  
+  <script defer src="./mobile-navbar.js"></script>
+	<script defer src="quiz.js" type="module"></script>
+  <title>Inicio</title>
+</head>
+
+<body>    
+  <div class="menu-section">
+    <div class="menu-burguer">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+
+    <nav class="nav-bar">
+    <ul class="listNav">
+      <li class="itemNav"><a href="./index.html">Sobre</a></li>
+      <li class="itemNav"><a href="./characters.html">Personagens</a></li>
+      <li class="itemNav"><a href="./temporadas.html">Temporadas</a></li>
+      <li class="itemNav jogos">Jogos
+        <a class="invisible" href="quiz.html">Quiz: quão fã você é?</a>
+        <a class="invisible" href="game.html">Jogo da Memória</a>
+      </li>
+      <li class="itemNav"><a href="./sobre.html">As devs</a></li>
+    </ul>
+      </nav>
+  </div>
+
+<header class="img-header">
+  <a class="logo"><img src="./images/Rick-And-Morty-Logo.png" width="350px" alt="">
+  </a>
+</header>
+  
+  <main class="mainQuiz">
+  
+    <h2>O quanto você sabe sobre a série?</h2>
+
+    <form class="quiz" id="quiz">
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual ano de criação da série?</label>
+          <p><input class="quizRespostas" type="radio" name="1" value=""> 2011</p>
+          <p><input class="quizRespostas" type="radio" name="1" value=""> 2012</p>
+          <p><input class="quizRespostas" type="radio" name="1" value="correta"> 2013</p>
+      </div>
+    
+      <div class="divQuiz">
+        <label class="quizQuestion"> Quantas temporadas tem atualmente?</label>
+          <p><input class="quizRespostas" type="radio" name="2" value=""> 4</p> 
+          <p><input class="quizRespostas" type="radio" name="2" value=""> 5</p> 
+          <p><input class="quizRespostas" type="radio" name="2" value="correta"> 6</p>
+      </div>
+
+      <div class="divQuiz">
+        <label class="quizQuestion"> Quantos epsódios tem a 2ª temporada?</label>
+          <p><input class="quizRespostas" type="radio" name="3" value=""> 9 </p> 
+          <p><input class="quizRespostas" type="radio" name="3" value="correta"> 10</p> 
+          <p><input class="quizRespostas" type="radio" name="3" value=""> 11</p> 
+      </div>
+    
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual a opção tem o nome correto dos criadores da série?</label>
+          <p><input class="quizRespostas" type="radio" name=" " value="correta"> Justin Roiland e Dan Harmon</p> 
+          <p><input class="quizRespostas" type="radio" name=" 4" value=""> Justin Harmon e Dan Roiland</p> 
+          <p><input class="quizRespostas" type="radio" name="4" value=""> Harmon Roiland e Justin Dan</p> 
+      </div>
+      
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual epsódio aparecem planetas com forma de cabeças gigantes?</label>
+          <p><input class="quizRespostas" type="radio" name="8" value="correta"> Planeta música</p> 
+          <p><input class="quizRespostas" type="radio" name="8" value=""> Cabeça música</p> 
+          <p><input class="quizRespostas" type="radio" name="8" value=""> Música planeta</p> 
+      </div>
+    
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual filme inspirou a série?</label> 
+          <p><input class="quizRespostas" type="radio" name="9" value=""> Exterminador do futuro</p> 
+          <p><input class="quizRespostas" type="radio" name="9" value=""> A família do futuro</p> 
+          <p><input class="quizRespostas" type="radio" name="9" value="correta"> De volta para o futuro</p> 
+      </div>
+
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual o dia e mês da criação?</label> 
+          <p><input class="quizRespostas" type="radio" name="5" value=""> 07/11</p> 
+          <p><input class="quizRespostas" type="radio" name="5" value="correta"> 17/01</p> 
+          <p><input class="quizRespostas" type="radio" name="5" value=""> 11/07</p> 
+      </div>
+    
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual a única temporada que teve 11 eps?</label> 
+          <p><input class="quizRespostas" type="radio" name="6" value="correta"> 1ª</p> 
+          <p><input class="quizRespostas" type="radio" name="6" value=""> 3ª</p> 
+          <p><input class="quizRespostas" type="radio" name="6" value=""> 6ª</p> 
+      </div>
+
+      <div class="divQuiz">
+        <label class="quizQuestion"> Quantos anos Rick ficou longe de sua familia?</label> 
+          <p><input class="quizRespostas" type="radio" name="7" value=""> 13</p> 
+          <p><input class="quizRespostas" type="radio" name="7" value="correta"> 14</p> 
+          <p><input class="quizRespostas" type="radio" name="7" value=""> Nenhum</p> 
+      </div> 
+
+      <div class="divQuiz">
+        <label class="quizQuestion"> Em quanto tempo a série foi criada, vendida e roterizada?</label> 
+          <p><input class="quizRespostas" type="radio" name="10" value="correta"> 1 dia</p> 
+          <p><input class="quizRespostas" type="radio" name="10" value=""> 1 mês</p> 
+          <p><input class="quizRespostas" type="radio" name="10" value=""> 10 anos</p> 
+      </div>
+  
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual o parentesco de Rick e Morty?</label> 
+          <p><input class="quizRespostas" type="radio" name="11" value=""> Pai e filho</p> 
+          <p><input class="quizRespostas" type="radio" name="11" value="correta"> Avô e neto</p> 
+          <p><input class="quizRespostas" type="radio" name="11" value=""> Enteado</p> 
+      </div>
+  
+      <div class="divQuiz">
+        <label class="quizQuestion"> Na 3ª temporada, Beth termina o casamento com...</label> 
+          <p><input class="quizRespostas" type="radio" name="12" value="correta"> Jerry</p> 
+          <p><input class="quizRespostas" type="radio" name="12" value=""> Jenkings</p> 
+          <p><input class="quizRespostas" type="radio" name="12" value=""> Jefferson</p> 
+      </div>
+  
+      <div class="divQuiz">
+        <label class="quizQuestion"> Qual personagem é uma geladeira?</label> 
+          <p><input class="quizRespostas" type="radio" name="13" value=""> Srta Geladeira</p> 
+          <p><input class="quizRespostas" type="radio" name="13" value="correta"> Senhora Geladeira</p> 
+          <p><input class="quizRespostas" type="radio" name="13" value=""> Lady Geladeira</p> 
+      </div>
+    
+      <div class="divQuiz">
+        <label class="quizQuestion"> O nome do cachorro de Morty é...</label> 
+          <p><input class="quizRespostas" type="radio" name="14" value=""> Suflê</p> 
+          <p><input class="quizRespostas" type="radio" name="14" value=""> Muffins</p> 
+          <p><input class="quizRespostas" type="radio" name="14" value="correta"> Snuffles</p> 
+      </div>
+      
+      <div class="divQuiz">
+        <label class="quizQuestion"> Rick é o pai de...</label> 
+          <p><input class="quizRespostas" type="radio" name="15" value=""> Morty</p> 
+          <p><input class="quizRespostas" type="radio" name="15" value=""> Summer</p> 
+          <p><input class="quizRespostas" type="radio" name="15" value="correta"> Beth</p>
+      </div> 
+    </form>
+
+    <p class="mensage"></p>
+
+    <button class="btn" id="btn">Enviar quiz</button>
+    
+    <a class="jogarNovamente" href="quiz.html">Jogar novamente</a>
+
+  </main>
+ 
+	<footer class="footer">
+		<h4>Desenvolvido por <a href="https://github.com/daianedosanjos?tab=repositories" target="_blank">Daiane dos Anjos</a> e <a href="https://github.com/Geice-Sousa?tab=repositories" target="_blank">Geice Sousa Pinho</a>, 2023 &copy;</h4>
+</footer>
+</body>
+</html>
