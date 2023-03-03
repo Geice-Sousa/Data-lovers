@@ -53,6 +53,37 @@ h2{
  margin-left: 2rem;
 }
 
+.desabilita{
+	pointer-events: none;	
+}
+
+.btn {
+  background-color: #3adfad;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  border: none;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.mensage{
+	color: white;
+	text-align: center;
+  font-size: 1.2rem;
+
+}
+
+.jogarNovamente{
+	display: none;
+}
+
 @media screen and (max-width: 489px) {
 	.mainQuiz{
 		display: flex;

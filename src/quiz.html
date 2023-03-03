@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="backgroundFooterNav.css">
   <link rel="stylesheet" href="quiz.css">  
   <script defer src="./mobile-navbar.js"></script>
-	<script defer src="quiz.js" type="module"></script>
+	<script defer src="quiz.js"></script>
+  <script defer src="main.js" type="module"></script>
   <title>Inicio</title>
 </head>
 
@@ -46,8 +47,7 @@
   
     <h2>O quanto você sabe sobre a série?</h2>
 
-    <!-- <button class="btn">Iniciar quiz</button>
-    <a href="sobre.html">Voltar ao inicio</a> -->
+    <p class="mensage"></p>
 
     <form class="quiz" id="quiz">
       <div class="divQuiz">
@@ -155,6 +155,11 @@
           <p><input class="quizRespostas" type="radio" name="15" value="correta"> Beth</p>
       </div> 
     </form>
+
+    <button class="btn" id="btn">Enviar quiz</button>
+    
+    <a class="jogarNovamente" href="quiz.html">Jogar novamente</a>
+
   </main>
  
 	<footer class="footer">
