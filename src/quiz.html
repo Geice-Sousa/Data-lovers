@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="backgroundFooterNav.css">
   <link rel="stylesheet" href="quiz.css">  
   <script defer src="./mobile-navbar.js"></script>
-	<script defer src="quiz.js"></script>
-  <script defer src="main.js" type="module"></script>
+	<script defer src="quiz.js" type="module"></script>
   <title>Inicio</title>
 </head>
 
@@ -46,8 +45,6 @@
   <main class="mainQuiz">
   
     <h2>O quanto você sabe sobre a série?</h2>
-
-    <p class="mensage"></p>
 
     <form class="quiz" id="quiz">
       <div class="divQuiz">
@@ -137,7 +134,7 @@
       <div class="divQuiz">
         <label class="quizQuestion"> Qual personagem é uma geladeira?</label> 
           <p><input class="quizRespostas" type="radio" name="13" value=""> Srta Geladeira</p> 
-          <p><input class="quizRespostas" type="radio" name="13" value=""> Senhora Geladeira</p> 
+          <p><input class="quizRespostas" type="radio" name="13" value="correta"> Senhora Geladeira</p> 
           <p><input class="quizRespostas" type="radio" name="13" value=""> Lady Geladeira</p> 
       </div>
     
@@ -155,6 +152,8 @@
           <p><input class="quizRespostas" type="radio" name="15" value="correta"> Beth</p>
       </div> 
     </form>
+
+    <p class="mensage"></p>
 
     <button class="btn" id="btn">Enviar quiz</button>
     

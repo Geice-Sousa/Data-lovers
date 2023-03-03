@@ -1,29 +1,28 @@
 /* config especifica dessa pagina */
 .filters {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-margin-top: 0.4rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 0.4rem;
 }
 
-::-webkit-input,
-  select {
+::-webkit-input, select {
 	border-radius: 5px;
-  }
+}
+
 .btn-reset{
 	background-color: #3adfad;
 	opacity: 80%;
 	cursor: pointer;
 	border-radius: 5px;
 	font-family: "IBM Plex Mono", monospace;
-
 }
 
-  .logo{
+.logo{
 	margin-top: 1rem;
-  }
+}
   
-  .card-container {
+.card-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -31,19 +30,19 @@ margin-top: 0.4rem;
 	overflow-y: scroll;
 	/*scrollbar-color não pega no chrome */
 	height: 37rem;
-  }
+}
   
-  .card-container ul {
-	margin: auto;
-  }
-  
-  .image {
+.card-container ul {
+	margin: auto;	
+}
+
+.image {
 	width: 100px;
 	border-radius: 50%;
-	
-  }
-  
-  .cards {
+
+}
+
+.cards {
 	background-color: #3adfad;
 	opacity: 80%;
 	border-radius: 15px;
@@ -56,31 +55,33 @@ margin-top: 0.4rem;
 	width: 170px;
 	font-family: "IBM Plex Mono", monospace;
 	padding-top: .25rem;
-  }
-  .li {
+}
+
+.li {
 	margin-left: -30px;
 	margin-top: 5px;
 	line-height: 15px;
 	font-size: 0.8rem;
-  }
-  
-  .div-percentage {
+}
+
+.div-percentage {
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
- }
+}
 
-  .percentage-return{
+.percentage-return{
 	margin-top: 0.5rem;
 	font-size: 1.4rem;
 	font-weight: bold;
-  }
-  
-  .species{
+}
+
+.species{
 	color: black;
-  }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
 	.div-percentage {
 	  margin: 0px;
 	  text-align: center;
@@ -92,4 +93,4 @@ margin-top: 0.4rem;
 	.footer {
 	  font-size: 0.8rem;
 	}
-  }
+}

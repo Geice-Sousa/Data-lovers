@@ -1,7 +1,6 @@
 body{
 	background-image: url(./images/background.jpg);
 	font-family: 'IBM Plex Mono', monospace;
-	/* background-size: 100%; não precisa, a imagem se adequa e depois repeat */
 }
 
 .img-header{
@@ -39,7 +38,6 @@ body{
 	align-items: center;
 	opacity: 100%;
 	color: #551A8B;
-
 }
 .listNav{
   margin: 1rem 2rem;
@@ -73,7 +71,6 @@ body{
 	align-items: center;
 	margin: .5rem auto auto auto; /*.5rem quebra entre os cards e o footer*/
 	background-color: rgb(255, 255, 255);
-
 }
 .footer h4{
 	opacity: 100%;
@@ -95,7 +92,6 @@ body{
 	.div-percentage{
 		margin: 0px;
 		text-align: center;
-	
 	}
 
 	.filters{
@@ -127,7 +123,6 @@ body{
 		margin-top: 2rem;
 		width: 40px;
 		height: 30px;
-	
 	}
 
 	.menu-section.on{

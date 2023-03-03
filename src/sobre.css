@@ -1,6 +1,7 @@
 body{
 	height: 100%;
 }
+
 h1{
 	margin: auto;
 	margin-top: 1rem;
@@ -12,6 +13,7 @@ ul{
 	padding-right: 20px;
 	list-style: none;
 }
+
 .logo{
 	margin-top: 1rem;
   }
@@ -24,6 +26,7 @@ ul{
 	margin: 1rem;
 
 }
+
 li{
 	font-size: 1.1rem;
 }
@@ -40,8 +43,6 @@ li{
 	width: 230px;
 	opacity: 80%;
 	padding: .25rem .25rem 0rem .25rem;
-
-
 }
 
 .card-img {
@@ -68,20 +69,20 @@ li{
   }
 
   @media screen and (min-width: 320px) and (max-width: 437px) {
-	.cardItem{
-		width: 180px;
-		margin: auto;
-	}
-	li{
-		font-size: 0.8rem;
-	}
+		.cardItem{
+			width: 180px;
+			margin: auto;
+		}
+		li{
+			font-size: 0.8rem;
+		}
 	
   }
 
  @media screen and (max-width: 523px)
- {
-  footer{
-    position: absolute;
+	{
+		footer{
+			position: absolute;
 
-  }
+		}
  }

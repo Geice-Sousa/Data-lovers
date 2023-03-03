@@ -80,21 +80,3 @@ order.addEventListener("change", () => {
 cleanfilter.addEventListener('click', (event) => {
   location.reload(event);
 })
-
-const enviaQuiz = document.querySelector("#btn");
-enviaQuiz.addEventListener("click", calculaAcertos);
-
-function calculaAcertos (){
-  const divQuiz = document.querySelectorAll(".divQuiz");
-  const mensage = document.querySelector(".mensage");
-  const jogarNovamente = document.querySelector(".jogarNovamente");
-  const inputCorretas = document.querySelectorAll("input[type=radio][value=correta]");
-  const qtdDeCorretas = inputCorretas.checked;
-  const percentage = calculatePercentage(qtdDeCorretas, divQuiz.length);
-
-
-  mensage.innerHTML = `Parabéns! Você acertou ${percentage} das perguntas.`
-  jogarNovamente.style.display = "block";
-  console.log("parabens! funcionou")
-  //jogarNovamente.classList.remove("jogarNovamente")
-}

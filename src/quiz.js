@@ -8,36 +8,44 @@ formQuiz.addEventListener("click", (e) => {
   const ehCorreta = ehRadio && elemento.value === "correta";
 
   if (ehRadio) {
-    elemento.parentNode.parentNode.dataset.score = ehCorreta;
-    //fazer selecionar apenas uma vez
+    const box = elemento.parentNode.parentNode;
 
-    // elemento.checked === true;
-    // console.log(elemento.closest("p input").disabled = "disabled") FAZ PARAR DE FUNCIONAR O INPUT JÁ SELECIONADO
-    const divQuiz = document.querySelector(".divQuiz");
-    console.log(divQuiz); //com All não funciona
-
-    divQuiz.classList.add("desabilita");
-
-    // elemento.disabled = "disabled"
+    box.dataset.score = ehCorreta;
+    box.classList.add("desabilita");
   }
-
-  // closest("p input") vai pegar o ancestral mais proximo no caso o p do input
 });
 
 const enviaQuiz = document.querySelector("#btn");
-enviaQuiz.addEventListener("click", calculaAcertos);
-
-function calculaAcertos (){
+enviaQuiz.addEventListener("click", function calculaAcertos (){
   const divQuiz = document.querySelectorAll(".divQuiz");
   const mensage = document.querySelector(".mensage");
   const jogarNovamente = document.querySelector(".jogarNovamente");
-  const inputCorretas = document.querySelectorAll("input[type=radio][value=correta]");
-  const qtdDeCorretas = inputCorretas.checked;
-  const percentage = calculatePercentage(qtdDeCorretas, divQuiz.length);
-
-
-  mensage.innerHTML = `Parabéns! Você acertou ${percentage} das perguntas.`
-  jogarNovamente.style.display = "block";
-  console.log("parabens! funcionou")
-  //jogarNovamente.classList.remove("jogarNovamente")
+  const qtdDeCorretas = document.querySelectorAll("input[type=radio][value=correta]:checked");
+  const percentage = calculatePercentage(divQuiz.length,qtdDeCorretas.length );
+  
+  if(percentage >= 70){
+    mensage.innerHTML = `Parabéns!!! Você é um super fã!!! Acertou ${percentage}% das perguntas.`
+    jogarNovamente.style.display = "block";
+    enviaQuiz.remove()
+  } 
+  
+  if(percentage < 70){
+    mensage.innerHTML = `Parabéns! Você acertou ${percentage}% das perguntas. Já pode dizer que é fã...`
+    jogarNovamente.style.display = "block";
+    enviaQuiz.remove()
+  } 
+  
+  if(percentage <= 50){
+    mensage.innerHTML = `Você acertou ${percentage}% das perguntas. Dá pra melhorar...`
+    jogarNovamente.style.display = "block";
+    enviaQuiz.remove()
+  } 
+  
+  if(percentage < 20){
+    mensage.innerHTML = `Você acertou ${percentage}% das perguntas. Parece que alguém precisa assistir mais epsódios...`
+    jogarNovamente.style.display = "block";
+    enviaQuiz.remove()
+  }
+ 
 }
+);
