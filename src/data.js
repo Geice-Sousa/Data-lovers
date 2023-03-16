@@ -5,7 +5,7 @@ export const searchByName =  (characters, name) => {
     return filteredSearch;
   });
   return filterName;
-} 
+}
   
 export const filter = (characters, value, key) => {
   const filterData = characters.filter(function(character) {

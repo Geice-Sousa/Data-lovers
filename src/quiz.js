@@ -21,8 +21,9 @@ enviaQuiz.addEventListener("click", function calculaAcertos (){
   const mensage = document.querySelector(".mensage");
   const jogarNovamente = document.querySelector(".jogarNovamente");
   const qtdDeCorretas = document.querySelectorAll("input[type=radio][value=correta]:checked");
-  const percentage = calculatePercentage(divQuiz.length,qtdDeCorretas.length );
+  const percentage = calculatePercentage(divQuiz.length,qtdDeCorretas.length);
   
+  //USAR SWITCH(PERCENTAGE){CASE 70:}
   if(percentage >= 70){
     mensage.innerHTML = `Parabéns!!! Você é um super fã!!! Acertou ${percentage}% das perguntas.`
     jogarNovamente.style.display = "block";

@@ -73,9 +73,7 @@ order.addEventListener("change", () => {
   const filterOrder = alphabeticalOrder(charactersOrder, characters );
   const cards = loadCharacters(filterOrder);
   cardContainer.innerHTML = cards;  
-
 })
-
 
 cleanfilter.addEventListener('click', (event) => {
   location.reload(event);
